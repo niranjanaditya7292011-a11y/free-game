@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+}
+
+#game {
+  width: 100vw;
+  height: 80vh;
+  background: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+#player, .enemy {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+#player {
+  background: green;
+  left: 50px;
+  bottom: 20px;
+}
+
+.enemy {
+  background: red;
+  right: 50px;
+  bottom: 20px;
+}
+
+#controls {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+}
+#hud {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}
+
+#restart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  padding: 10px 20px;
+}
+#joystick {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  touch-action: none;
+}
+
+#stick {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+#actionBtns {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+#actionBtns button {
+  display: block;
+  font-size: 22px;
+  margin: 10px;
+  padding: 10px;
+}
+#player {
+  background: green;
+  left: 50px;
+  bottom: 20px;   /* 🔴 यह लाइन बहुत जरूरी है */
+  position: absolute;
+}
